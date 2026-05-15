@@ -1,0 +1,41 @@
+# PyVAF — Vulnerability Assessment Framework
+# Configuration File
+
+app:
+  name: "PyVAF"
+  version: "1.0.0"
+  author: "Your Name"
+  description: "Python-based Vulnerability Assessment Framework"
+
+server:
+  host: "127.0.0.1"
+  port: 5000
+  debug: false
+
+database:
+  path: "instance/pyvaf.db"
+
+scan:
+  timeout: 10
+  max_cves_per_service: 3
+  top_ports: 1000
+  default_modules:
+    - port
+    - web
+    - ssl
+    - dns
+    - cve
+
+nmap:
+  arguments: "-sV -T4 -sT"
+  # -sV  = version detection
+  # -T4  = aggressive timing
+  # -sT  = TCP connect (no admin needed)
+
+reports:
+  output_dir: "reports"
+  author: "PyVAF Framework"
+
+logging:
+  level: "INFO"
+  show_progress: true
