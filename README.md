@@ -73,6 +73,7 @@ for testing purposes.
 ## Project Structure
 
 pyvaf/
+
 ├── main.py          Entry point
 
 ├── config.yaml      Configuration
