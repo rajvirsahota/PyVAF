@@ -74,10 +74,17 @@ for testing purposes.
 
 pyvaf/
 ├── main.py          Entry point
+
 ├── config.yaml      Configuration
+
 ├── api/             Flask REST API
+
 ├── core/            Scanner, analyzer, reporter
+
 ├── gui/             CustomTkinter interface
+
 ├── models/          SQLAlchemy database models
+
 ├── modules/         Scan modules
+
 └── reports/         Generated PDF reports
